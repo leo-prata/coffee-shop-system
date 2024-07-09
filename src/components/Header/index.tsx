@@ -21,7 +21,7 @@ export function Header(){
                         <p>Category</p>
                     </Link>
                     <Link href='/product'>
-                        <p>Menu</p>
+                        <p>Product</p>
                     </Link>
                     <button onClick={signOut}>
                         <FiLogOut color='white' size={20}/>
