@@ -1,5 +1,9 @@
 # Welcome to Cafe Leblanc!
 
+<p align="right">
+<img src="/public/leblnaccofe.png" alt="logo" width="280" height="280" align="right" />
+</p>
+
 The Coffee Shop system is designed to facilitate the management of a coffee shop's operations through a RESTful API. 
 The system's backend is developed in TypeScript and utilizes Prisma as an ORM for interacting with a PostgreSQL database.
 On the frontend side, the application leverages TypeScript along with React and Next.js, that adds powerful features such as server-side rendering (SSR), automatic code splitting, and seamless client-side navigation through its 
