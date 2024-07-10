@@ -6,9 +6,8 @@
 
 The Coffee Shop system is designed to facilitate the management of a coffee shop's operations through a RESTful API. 
 The system's backend is developed in TypeScript and utilizes Prisma as an ORM for interacting with a PostgreSQL database.
-On the frontend side, the application leverages TypeScript along with React and Next.js, that adds powerful features such as server-side rendering (SSR), automatic code splitting, and seamless client-side navigation through its 
-routing capabilities. 
-This integration allows for fast page loads and a smooth user experience, crucial for managing orders, products, and categories in a coffee shop environment.
+On the frontend side, the application leverages TypeScript along with React, Next.js, that adds powerful features such as server-side rendering (SSR), automatic code splitting, and seamless client-side navigation through its 
+routing capabilities. Furthermore, SCSS (Sass) was used to style the application, providing enhanced capabilities such as variables, mixins, and nested selectors, which simplify the styling process and maintain CSS codebases more effectively. This integration allows for fast page loads and a smooth user experience, crucial for managing orders, products, and categories in a coffee shop environment.
 
 ## User Management
 The application begins with user registration, where new users can sign up by providing their name, email, and password. Upon registration, the system stores these details in the database, recording the user's creation timestamp (created_at). Users are required to authenticate themselves via a login route (POST /session), where the provided credentials are verified against the stored data. Successful authentication returns a token, allowing users to access protected routes that require authentication, such as managing orders and products.
@@ -28,5 +27,6 @@ Customers can place orders within the system, which are represented as individua
 - Marking an order as sent (PUT /order/send) updates its status to indicate it's been dispatched for preparation or delivery.
 - Completing an order (PUT /order/finish) changes its status to denote successful fulfillment.
 - Order and Product Relationships
-- Items within an order (Item) reflect specific products selected by customers. Each item tracks its quantity (amount) and maintains relationships with both an order (order_id) and a product (product_id). 
+- Items within an order (Item) reflect specific products selected by customers. Each item tracks its quantity (amount) and maintains relationships with both an order (order_id) and a product (product_id). This structure allows for efficient tracking and management of orders, ensuring accurate fulfillment and inventory management within the coffee shop.
+
 
