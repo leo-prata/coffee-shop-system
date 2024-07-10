@@ -7,9 +7,10 @@ interface ModalOrderProps{
     isOpen: boolean;
     onClose: () => void;
     order: OrderItemProps[];
+    handleFinishOrder: (id: string) => void; 
 }
 
-export function ModalOrder({isOpen, onClose, order}: ModalOrderProps){
+export function ModalOrder({isOpen, onClose, order, handleFinishOrder}: ModalOrderProps){
     
     const customStyle = {
         content: {
@@ -51,7 +52,7 @@ export function ModalOrder({isOpen, onClose, order}: ModalOrderProps){
                     </section>
                 ))}
 
-                <button className={styles.buttonOrder} onClick={() => {}}>
+                <button className={styles.buttonOrder} onClick={() => handleFinishOrder(order[0].order_id)}>
                     Finish Order
                 </button>
             </div>
