@@ -19,9 +19,14 @@ The system categorizes products to organize the coffee shop's offerings efficien
 ## Order Processing
 Customers can place orders within the system, which are represented as individual entries in the Order table. Each order includes details such as the table number (table), current status (status), and whether it's a draft (draft). Orders are created using POST /order and can be managed through several actions:
 
+<p align="">
+<img src="/public/morgana.png" alt="logo" width="250" height="250" align="left" />
+</p>
+
 - Adding items (POST /order/add) associates a product (product_id) with an order (order_id), specifying the quantity (amount).
 - Removing items (DELETE /order/remove) removes specified items from an order.
 - Marking an order as sent (PUT /order/send) updates its status to indicate it's been dispatched for preparation or delivery.
 - Completing an order (PUT /order/finish) changes its status to denote successful fulfillment.
 - Order and Product Relationships
-- Items within an order (Item) reflect specific products selected by customers. Each item tracks its quantity (amount) and maintains relationships with both an order (order_id) and a product (product_id). This structure allows for efficient tracking and management of orders, ensuring accurate fulfillment and inventory management within the coffee shop.
+- Items within an order (Item) reflect specific products selected by customers. Each item tracks its quantity (amount) and maintains relationships with both an order (order_id) and a product (product_id). 
+
